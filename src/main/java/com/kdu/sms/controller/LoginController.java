@@ -45,17 +45,6 @@ public class LoginController {
             return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
         }
     }
-//    @PutMapping("/editProfile")
-//    public ResponseEntity<String> editProfile(@PathVariable int id,
-//                                             @RequestBody Users user){
-//        user.setId(id);
-//        try{
-//            userService.editProfile(user);
-//            return  ResponseEntity.ok("Üser updated successfully");
-//        }catch(RuntimeException ex){
-//            return ResponseEntity.status(HttpStatus.NOT_FOUND).body(ex.getMessage());
-//        }
-//    }
 
     @PutMapping("/editProfile/{id}")
     public ResponseEntity<String> editProfile(@PathVariable int id,
