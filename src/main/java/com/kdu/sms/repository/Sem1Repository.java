@@ -6,5 +6,5 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface Sem1Repository extends JpaRepository<Sem1Entity, Long> {
-    // Custom query methods can be added here if needed
+
 }
